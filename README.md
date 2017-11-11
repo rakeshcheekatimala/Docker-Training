@@ -21,3 +21,9 @@ ex-01: Launch DockerQuickStart Terminal and check installation is successful.
   $ docker ps -a
   ```
   Here you should see all existing containers, running or not.
+
+  To know the list of images locally , run this below command:
+
+  ```bash
+   docker images
+   ```
