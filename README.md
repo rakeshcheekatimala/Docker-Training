@@ -23,3 +23,21 @@ ex-01: Launch DockerQuickStart Terminal and check installation is successful.
   $ docker ps -a
   ```
   Here you should see all existing containers, running or not.
+
+  To Stop a running container:
+  (To get the cotainerid use docker ps -a )
+
+  ```bash
+  docker stop containerid.
+  ```
+  ex: docker stop 123450ap
+
+  To Kill a container:
+
+  ```bash
+  docker kill 123450ap
+  ```
+  To Remove a image from local registry:
+  ```bash
+  docker rmi Imageid
+  ```
