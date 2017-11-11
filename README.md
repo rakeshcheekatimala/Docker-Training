@@ -3,6 +3,9 @@
 Basics of Docker and How to create Docker files, docker commands usage.
 
 ex-02: Launch DockerQuickStart Terminal and run tomcat image of latest version.
+
+<h3> Demo to describe how to run tomcat and expose its port to outside docker so that you can access tomcat. </h3>
+
 ```bash
 docker run tomcat:latest
 ```
