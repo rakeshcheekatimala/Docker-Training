@@ -69,3 +69,38 @@ Convention for Tagging Image:
 
 YourDockerID/imagename:latest
 rakeshcheekatimala/redis:latest
+
+To Create Build Tag for Image
+docker build -t rakeshcheekatimala/simplewebapp:latest
+
+To Do the Port Forwarding:
+
+docker run -p 8080<incomingport> : 8080<port inside container> <imageid>
+
+docker run -p 8080:8080 imageid
+
+Please refer to simplewebapp this is the example for port forwarding.
+To run the app
+
+1.  docker build -t rakeshcheekatimala/simplewebapp .
+2.  docker run rakeshcheekatimala/simplwebapp -p 8080:8080
+3.  Open chrome and enter http://localhost:8080
+
+Prints the Message from node get response which is coming from docker container.
+
+<h5>Docker Compose</h5>
+ Helps to setup the network setup and communication between two containers (services) that are running.
+ Ex: * redis-server is the container that is running redis server.
+     * node-app is the container that is running the nodejs server.
+Docker compose helps to connect the communication between these two containers.
+
+commands:
+
+- docker-compose up is used for running the images defied in docker-compose.yml
+- docker-compose up --build is used for building the images and startup the container once the build is completed
+
+visit:http://localhost:8081/ (Running nodejs App that is connected to redis-server)
+
+Launch in background : docker-compose up -d
+
+Stop : docker-compose down
