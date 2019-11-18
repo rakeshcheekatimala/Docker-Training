@@ -3,9 +3,9 @@ services: # containers
   redis-server:
     image: "redis"
   node-app:
-    restart: always
+    restart: always # to recover from crash and start container
     build: .
     ports:
-      - "8081:8081"
+      - "4000:4000"
 # docker compose is used for starting multiple containers at the same time
 # very easy to write all the configuration that are passed to Docker-CLI for the containers

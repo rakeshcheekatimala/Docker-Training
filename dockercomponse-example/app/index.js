@@ -1,5 +1,6 @@
 const express = require("express");
 const redis = require("redis");
+const PORT = 4000;
 
 const app = express();
 const client = redis.createClient({
@@ -17,6 +18,6 @@ app.get("/", (req, res) => {
   });
 });
 
-app.listen(8081, () => {
-  console.log("Listening on port 8081");
+app.listen(PORT, () => {
+  console.log(`Listening on port ${PORT}`);
 });
