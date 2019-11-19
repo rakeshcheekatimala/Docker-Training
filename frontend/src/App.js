@@ -16,6 +16,7 @@ function App() {
         >
           Learn React
         </a>
+        <p>Docker build with Nginx to serve static content</p>
       </header>
     </div>
   );
